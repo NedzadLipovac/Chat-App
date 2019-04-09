@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="196dp"
+        android:layout_height="176dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:src="@mipmap/ic_launcher_profile1_round"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+
+        />
+
+    <Button
+        android:id="@+id/settingsImageBtn"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/startRegBtn"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-3dp"
+
+        android:layout_marginBottom="165dp"
+        android:text="@string/change_image"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/settingsStatusBtn"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/settingsImageBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="103dp"
+        android:background="@color/colorAccent"
+        android:text="@string/change_status"
+        android:textColor="#fff"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/settingsName"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/display_name"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/settingsStatus"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/settingsImageBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-99dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/hi_there_i_am_using_lapit_chat_app"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="16sp"
+
+        />
+</RelativeLayout>

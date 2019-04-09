@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userSingleReqImage"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/ic_launcher_useravatar5" />
+
+
+    <TextView
+        android:id="@+id/usersSingleReqName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userSingleReqImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/display_name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnReqYes"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/usersSingleReqName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="YES"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnReqNo"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/usersSingleReqName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="NO"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" /><![CDATA[
+
+    >
+]]>
+</RelativeLayout>

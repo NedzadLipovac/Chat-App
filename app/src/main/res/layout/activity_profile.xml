@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cast_expanded_controller_bg_gradient_light"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mProfileImage"
+        android:layout_width="215dp"
+
+        android:layout_height="231dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/ic_launcher_profile56" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="254dp"
+        android:text="@string/display_name"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileStatus"
+        android:layout_width="482dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/settingsImageBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="294dp"
+        android:text="@string/hi_there_i_am_using_lapit_chat_app"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/profileDeclineReqBtn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="@color/colorAccent"
+        android:text="DECLINE FRIEND REQUEST"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/profileSendReqBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="97dp"
+        android:background="@color/colorAccent"
+        android:text="SEND FRIEND REQUEST"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textStyle="bold" />
+
+</RelativeLayout>

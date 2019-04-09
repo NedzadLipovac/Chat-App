@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "150133975770",
+    "firebase_url": "https://lappitchat-d1c38.firebaseio.com",
+    "project_id": "lappitchat-d1c38",
+    "storage_bucket": "lappitchat-d1c38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150133975770:android:586d56bd0228bf3b",
+        "android_client_info": {
+          "package_name": "com.example.nedadlipovac.lappitchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150133975770-9ogeqgrr6219ih4s6mejtp7p7l6gba8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nedadlipovac.lappitchat",
+            "certificate_hash": "d088b671eb6a908366ccf9809385df381fc12452"
+          }
+        },
+        {
+          "client_id": "150133975770-86i1c9bsmhjfn8u8a0cepjb30gvl7h0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2zXiOA_xW8kR2WnGSnJ7M_fOX7w0-Nko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150133975770-86i1c9bsmhjfn8u8a0cepjb30gvl7h0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

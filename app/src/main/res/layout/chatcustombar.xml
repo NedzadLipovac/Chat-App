@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/customBarImage"
+        android:layout_width="69dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/ic_launcher_profile56" />
+
+    <TextView
+        android:id="@+id/chatCustomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="Display Name"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/chatCutomLastSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatCustomName"
+        android:layout_alignParentStart="true"
+        android:text="Last Seen"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
