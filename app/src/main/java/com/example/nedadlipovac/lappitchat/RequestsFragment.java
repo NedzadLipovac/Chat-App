@@ -84,9 +84,7 @@ public class RequestsFragment extends Fragment {
             FirebaseRecyclerAdapter<Req, ReqViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Req, ReqViewHolder>(options) {
                 @Override
                 protected void onBindViewHolder(@NonNull final ReqViewHolder holder, int position, @NonNull Req model) {
-                    Toast.makeText(getContext(), "OnBind View holder", Toast.LENGTH_LONG).show();
-
-                    final String list_user_id = getRef(position).getKey();
+                   final String list_user_id = getRef(position).getKey();
 
                     mReqDatabase.addChildEventListener(new ChildEventListener() {
                         @Override
@@ -98,8 +96,6 @@ public class RequestsFragment extends Fragment {
                                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                     final String type = dataSnapshot.child("request_type").getValue().toString();
                                     Log.i("ON_Child_TEST", type + "->" + key);
-                                    // Toast.makeText(getContext(),type+"-->"+key,Toast.LENGTH_LONG).show();
-                                    //find name and image of user
                                     mUsersDatabase.child(list_user_id).addValueEventListener(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

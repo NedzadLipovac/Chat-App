@@ -58,8 +58,6 @@ public class login extends AppCompatActivity {
 
                 String email = mLoginEmail.getText().toString();
                 String password = mLoginPassword.getText().toString();
-                Toast.makeText(login.this, "ulazak u login funkciju" + email + "--" + password, Toast.LENGTH_LONG).show();
-
                 if (!TextUtils.isEmpty(email) || !TextUtils.isEmpty(password)) {
                     mLoginProgres.setTitle("Logging in");
                     mLoginProgres.setMessage("Please wait while we check your credentials");
@@ -86,11 +84,9 @@ public class login extends AppCompatActivity {
                             mUsersDatabase.child(current_user_uid).child("device_token").setValue(deviceToken).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    FirebaseUser user = mAuth.getCurrentUser();
                                     Intent mainIntent = new Intent(login.this, MainActivity.class);
                                     startActivity(mainIntent);
-                                    mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-
+                                    //mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     finish();
                                 }
                             });
