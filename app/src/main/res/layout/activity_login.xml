@@ -17,25 +17,25 @@
     <EditText
 
         android:id="@+id/logPassword"
-        android:layout_width="351dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="222dp"
         android:hint="@string/pass"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:paddingStart="10dp" />
 
     <EditText
         android:id="@+id/logEmail"
-        android:layout_width="351dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="162dp"
         android:hint="@string/email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp" />
 
     <Button
         android:id="@+id/logLoginBtn"

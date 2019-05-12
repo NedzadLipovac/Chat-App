@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/chatCustomName"
-        android:layout_width="wrap_content"
+        android:layout_width="237dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"

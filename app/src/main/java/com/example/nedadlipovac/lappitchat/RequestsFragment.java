@@ -67,7 +67,8 @@ public class RequestsFragment extends Fragment {
         }
         mFriendsDatabase = FirebaseDatabase.getInstance().getReference().child("Friends");
         mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
-
+        mUsersDatabase.keepSynced(true);
+        mFriendsDatabase.keepSynced(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         mReqList.setLayoutManager(linearLayoutManager);
         mReqList.setHasFixedSize(true);

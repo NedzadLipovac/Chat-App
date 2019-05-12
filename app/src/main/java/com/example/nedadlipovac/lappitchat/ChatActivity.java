@@ -95,7 +95,7 @@ public class ChatActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("");
+        actionBar.setTitle("**********");
         actionBar.setDisplayShowCustomEnabled(true);
         mRootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -128,6 +128,7 @@ public class ChatActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String online = dataSnapshot.child("online").getValue().toString();
                 String image = dataSnapshot.child("image").getValue().toString();
+                String name=dataSnapshot.child("name").getValue().toString();
                 if (online.equals("true")) {
                     mLastSeenView.setText("Online");
                 } else {
@@ -137,6 +138,7 @@ public class ChatActivity extends AppCompatActivity {
                     mLastSeenView.setText(lastSeen);
                 }
                 setUserImage(image, getApplicationContext());
+                mTitleView.setText(name);
 
 
             }
