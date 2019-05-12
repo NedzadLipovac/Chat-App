@@ -95,7 +95,7 @@ public class ChatActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("**********");
+        actionBar.setTitle("");
         actionBar.setDisplayShowCustomEnabled(true);
         mRootRef = FirebaseDatabase.getInstance().getReference();
 
